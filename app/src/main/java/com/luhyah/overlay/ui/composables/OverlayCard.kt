@@ -51,58 +51,5 @@ fun OverlayCard(oVMC: OverlayViewModel = OverlayViewModel()){
             fontFamily = state.fontType,
             color = state.fontColor)
 
-
-//        when(state.selectedType) {
-//            oVMC.overlayTypes[0] -> {
-//                Text(modifier = Modifier.padding(3.dp) , text = "00:00:00", fontSize = state.fontSize.sp , color = state.fontColor)
-//            }
-//
-//            oVMC.overlayTypes[1] -> {
-//                Text(modifier = Modifier.padding(3.dp) , text = state.countUpTimeString, fontSize = state.fontSize.sp , color = state.fontColor)
-//            }
-//
-//            oVMC.overlayTypes[2] -> {
-//                Text(modifier = Modifier.padding(3.dp) , text = state.overlayText , fontSize = state.fontSize.sp , color = state.fontColor)
-//            }
-//        }
     }
 }
-
-
-
-
-
-
-
-//fun CountUpTimer(mode:String, handler: Handler, oVM: OverlayViewModel){
-//    //mode = start and stop
-//    if (mode == "stop") {
-//        handler.removeCallbacksAndMessages(null)
-//        oVM.countUpTime = 0
-//        oVM.countUpTimeString = "00:00:00"
-//        oVM.updateCountUpTimeString(oVM.countUpTimeString)
-//    }
-//    else {
-//        handler.post(object : Runnable {
-//            override fun run() {
-//
-//
-//                oVM.countUpTime++
-//
-//                val hours = TimeUnit.SECONDS.toHours(oVM.countUpTime)
-//                val remainder: Long = oVM.countUpTime - TimeUnit.HOURS.toSeconds(hours)
-//                val minutes = TimeUnit.SECONDS.toMinutes(remainder)
-//                val seconds = remainder - TimeUnit.MINUTES.toSeconds(minutes)
-//
-//                oVM.countUpTimeString = String.format(Locale.getDefault() ,
-//                    "%02d:%02d:%02d" , hours , minutes , seconds
-//                )
-//
-//                oVM.updateCountUpTimeString(oVM.countUpTimeString)
-//                handler.postDelayed(this, 1000)
-//            }
-//        })
-//    }
-//
-//
-//}

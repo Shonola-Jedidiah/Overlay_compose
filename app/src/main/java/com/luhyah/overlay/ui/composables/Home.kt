@@ -70,14 +70,12 @@ val fontArray = arrayOf("bitcountprop","chewy", "comicrelief", "roboto", "spaceg
 fun Home(
      modifier: Modifier,
      oVM: OverlayViewModel , context: Context , requestPermission: () -> Unit ,
-     /*startCountDownTimer: (Long) -> Unit , pauseCountDownTimer: () -> Unit ,
-     endCountDownTimer: () -> Unit,*/ callService:(Intent) -> Unit
+     callService:(Intent) -> Unit
  ) {
 
      var fontDialog by rememberSaveable { mutableStateOf(false) }
      var bgDialog by rememberSaveable { mutableStateOf(false) }
 
-//    val overlayPermission  = rememberPermissionState(Manifest.permission.)
 
      oVM.permissionNotGranted = !Settings.canDrawOverlays(context)
 
@@ -130,55 +128,7 @@ fun Home(
                           }, enabled = !oVM.permissionNotGranted)
              }
 
-//             //OverlayType
-//             Row(
-//                 verticalAlignment = Alignment.CenterVertically ,
-//                 modifier = Modifier
-//                     .fillMaxWidth()
-//                     .padding(top = 10.dp , end = 10.dp , start = 10.dp)
-//             ) {
-//                 Text(text = "Overlay Type" , modifier = Modifier.padding(end = 15.dp))
-//                 Row(
-//                     modifier = Modifier
-//                         /*.clickable(onClick = { oVM.typeExpanded = !oVM.typeExpanded })*/
-//                         .padding(end = 10.dp)
-//                 ) {
-//                     Text(
-//                         text = "Text"/*oVM.selectedType*/ , modifier = Modifier
-//                             .weight(1f)
-//                             .align(Alignment.CenterVertically)
-//                             .onGloballyPositioned { it ->
-//                                 oVM.selectedTypeSize = it.size.toSize()
-//                             }
-//                     )
-//                     Icon(Icons.Rounded.ArrowDropDown , contentDescription = "")
-//
-//                 }
-//
-//                 Box(modifier = Modifier.fillMaxWidth()) {
-////                     DropdownMenu(
-////                         expanded = oVM.typeExpanded ,
-////                         onDismissRequest = { oVM.typeExpanded = false } ,
-////                         modifier = Modifier
-////                             .width(with(LocalDensity.current) { oVM.selectedTypeSize.width.toDp() })
-////                             .align(Alignment.BottomCenter)
-////                     ) {
-////                         oVM.overlayTypes.forEach {
-////                             DropdownMenuItem(
-////                                 text = {
-////                                     Text(text = it)
-////                                 } ,
-////                                 onClick = {
-////                                     oVM.selectedType = it
-////                                     oVM.typeExpanded = false
-////                                     oVM.updateOverlayType(it)
-////                                 }
-////                             )
-////                         }
-////                     }
-//                 }
-//
-//             }
+
 
              //fontType
              Row(
@@ -317,125 +267,9 @@ fun Home(
                         label = {
                             Text(text = "Input text here")
                         })
-//                    Button(
-//                        enabled = oVM.enabled ,
-//                        onClick = {} ,
-//                        contentPadding = ButtonDefaults.TextButtonContentPadding
-//                    ) { Text(text = "Save") }
+
                 }
-//            when(oVM.selectedType){
-//                //TEXT
-//                oVM.overlayTypes[2]->  Row(
-//                    verticalAlignment = Alignment.CenterVertically ,
-//                    modifier = Modifier
-//                        .fillMaxWidth()
-//                        .padding(top = 5.dp , end = 10.dp , start = 10.dp , bottom = 10.dp)
-//                ) {
-//                    TextField(
-//                        enabled = oVM.enabled ,
-//                        value = oVM.overlayText , onValueChange = { oVM.overlayText = it
-//                                                                  oVM.updateOverlayText(it)} ,
-//                        leadingIcon = {
-//                            Icon(
-//                                Icons.Outlined.EditNote ,
-//                                contentDescription = "Overlay Text" ,
-//                                tint = MaterialTheme.colorScheme.primary
-//                            )
-//                        } ,
-//                        maxLines = 5 , modifier = Modifier.weight(1f) ,
-//                        label = {
-//                            Text(text = "Input text here")
-//                        })
-//                    Button(
-//                        enabled = oVM.enabled ,
-//                        onClick = {} ,
-//                        contentPadding = ButtonDefaults.TextButtonContentPadding
-//                    ) { Text(text = "Save") }
-//                }
-//                //Count Up Timer
-//                oVM.overlayTypes[1]->Column {
-//                    Row(
-//                        verticalAlignment = Alignment.CenterVertically ,
-//                        modifier = Modifier
-//                            .fillMaxWidth()
-//                            .padding(top = 5.dp , end = 10.dp , start = 10.dp)
-//                    ) {
-//                        Icon(
-//                            Icons.Outlined.Timer ,
-//                            contentDescription = "CountUp Timer" ,
-//                            modifier = Modifier.padding(end = 10.dp) ,
-//                            tint = MaterialTheme.colorScheme.primary
-//                        )
-//                        Text(text = "Count-Up Timer")
-//                    }
-//                    Row(
-//                        verticalAlignment = Alignment.CenterVertically ,
-//                        modifier = Modifier
-//                            .fillMaxWidth()
-//                            .padding(10.dp)
-//                    ) {
-//                        Button(
-//                            enabled = oVM.enabled && !oVM.isCountUpTimerActive,
-//                            onClick = {oVM.isCountUpTimerActive = !oVM.isCountUpTimerActive} ,
-//                            contentPadding = ButtonDefaults.TextButtonContentPadding ,
-//                            modifier = Modifier.padding(end = 10.dp)) { Text(text = "Start") }
-//                        Button(
-//                            enabled = oVM.enabled && oVM.isCountUpTimerActive,
-//                            onClick = {oVM.isCountUpTimerActive = !oVM.isCountUpTimerActive} ,
-//                            contentPadding = ButtonDefaults.TextButtonContentPadding) { Text(text = "Stop") }
-//                    }
-//                }
-//                //Countdown Timer
-//                oVM.overlayTypes[0]-> Column {
-//                        TextField(
-//                            enabled = oVM.enabled ,
-//                            value = oVM.overlayTimerString , onValueChange = {oVM.overlayTimerString = it
-//                                                                             oVM.updateOverlayTimerText(it)} ,
-//                            leadingIcon = {
-//                                Icon(
-//                                    Icons.Outlined.Timer ,
-//                                    contentDescription = "CountUp Timer" ,
-//                                    tint = MaterialTheme.colorScheme.primary
-//                                )
-//                            },
-//                            label = {
-//                                Text("Count-down Time")
-//                            },
-//                            modifier = Modifier.padding(top = 5.dp , end = 10.dp , start = 10.dp),
-//                            suffix = {
-//                                Text("minutes")
-//                            },
-//                            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
-//                        )
-//                    Row(
-//                        verticalAlignment = Alignment.CenterVertically ,
-//                        modifier = Modifier
-//                            .fillMaxWidth()
-//                            .padding(10.dp)
-//                    ) {
-//                        Button(
-//                            enabled = oVM.enabled ,
-//                            onClick = { try {oVM.overlayTimerLong = oVM.overlayTimerString.toLong()}catch (e: Exception){ Log.d("To Long Conversion error", e.toString()) }
-//                               if(oVM.overlayTimerLong != 0L) startCountDownTimer(oVM.overlayTimerLong) },
-//                            contentPadding = ButtonDefaults.TextButtonContentPadding ,
-//                            modifier = Modifier.padding(end = 10.dp)) { Text(text = "Start") }
-//                        Button(
-//                            enabled = oVM.enabled && oVM.isCountDownTimerActive ,
-//                            onClick = {if(oVM.isCountDownTimerPaused == true) {
-//                                startCountDownTimer(oVM.remainingCountDownTime)}
-//                                      else{pauseCountDownTimer}} ,
-//                            contentPadding = ButtonDefaults.TextButtonContentPadding ,
-//                            modifier = Modifier.padding(end = 10.dp)) {
-//                            Text(text = if(oVM.isCountDownTimerPaused){"Play"}else{"Pause"}
-//                        ) }
-//                        Button(
-//                            enabled = oVM.enabled && oVM.isCountDownTimerActive,
-//                            onClick = endCountDownTimer ,
-//                            contentPadding = ButtonDefaults.TextButtonContentPadding) { Text(text = "Stop") }
-//                    }
-//
-//                }
-//            }
+
 
          }
 

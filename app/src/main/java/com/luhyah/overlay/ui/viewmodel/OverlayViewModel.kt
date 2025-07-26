@@ -24,14 +24,9 @@ class OverlayViewModel(): ViewModel() {
 
     var enabled by mutableStateOf(false)
     var overlayText by mutableStateOf("")
-//    var overlayTimerLong by mutableLongStateOf(0)
-//    var overlayTimerString by mutableStateOf("")
     var fontSize by mutableFloatStateOf(20f)
     var xPosition by mutableFloatStateOf(0f)
     var yPosition by mutableFloatStateOf(0f)
-
-//    val overlayTypes = arrayOf("COUNTDOWN TIMER" , "COUNT-UP TIMER" , "TEXT")
-//    var selectedType by mutableStateOf(overlayTypes[2])
     var selectedTypeSize by mutableStateOf(Size.Zero)
     var typeExpanded by mutableStateOf(false)
 
@@ -53,33 +48,14 @@ class OverlayViewModel(): ViewModel() {
     var fontColor by mutableStateOf(Color.White)
     var bgColor by mutableStateOf(Color.Black)
 
-//    var remainingCountDownTime by mutableLongStateOf(0)
-//    var isCountDownTimerActive by mutableStateOf(false)
-//    var isCountDownTimerPaused by mutableStateOf(false)
-
-//    var isCountUpTimerActive by mutableStateOf(false)
-//    var countUpTime by mutableLongStateOf(0)
-//    var countUpTimeString by mutableStateOf("00:00:00")
-
-//    val overlayState: StateFlow<OverlayUIState> = OverlayStateRepository.overlayState
 
     fun updateOverlayText(text: String) = OverlayStateRepository.setOverlayText(text)
     fun updateFontSize(size: Float) = OverlayStateRepository.setFontSize(size)
     fun updateFontColor(color: Color) = OverlayStateRepository.setFontColor(color)
     fun updateBgColor(color: Color) = OverlayStateRepository.setBgColor(color)
-//    fun updateOverlayType(type: String) = OverlayStateRepository.setSelectedType(type)
     fun updateXPosition(percent: Float) = OverlayStateRepository.setXPosition(percent)
     fun updateYPosition(percent: Float) = OverlayStateRepository.setYPosition(percent)
     fun updateFontType(type: FontFamily) = OverlayStateRepository.setFontType(type)
-//    fun updateOverlayTimerText(type: String) = OverlayStateRepository.setOverlayTimerText(type)
-//    fun updateCountUpTimeString(time: String) = OverlayStateRepository.setCountUpTimeString(time)
 
-//    val currentOverlayText get() = overlayState.value.overlayText
-//    val currentFontSize get() = overlayState.value.fontSize
-//    val currentFontColor get() = overlayState.value.fontColor
-//    val currentBgColor get() = overlayState.value.bgColor
-//    val currentOverlayType get() = overlayState.value.selectedType
-//    val currentXPosition get() = overlayState.value.xPosition
-//    val currentYPosition get() = overlayState.value.yPosition
 
 }
