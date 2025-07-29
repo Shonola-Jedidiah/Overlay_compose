@@ -52,5 +52,5 @@ This app was built to solve a personal problem: forgetting things even after set
 
 ## 🔗 Connect
 
-Made with ❤️ by [Shonola Jedidiah LinkedIn](https://www.linkedin.com/in/shonola-jedidiah)
+Made with ❤️ by [Shonola Jedidiah LinkedIn](https://ng.linkedin.com/in/jedidiah-shonola-63729b192)
 
