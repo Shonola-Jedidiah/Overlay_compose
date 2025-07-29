@@ -1,6 +1,6 @@
-# 📲 Overlay Compose: A Persistent Screen Text Reminder for Android
+# 📲 Overlay: A Persistent Screen Text Reminder for Android
 
-**Overlay Compose** is a lightweight Android application that allows users to overlay custom text on top of all apps. Its primary purpose is to act as a **non-dismissable, always-visible reminder** ideal for displaying things like exam timetables, goals, or urgent tasks that need constant visibility.
+**Overlay** is a lightweight Android application that allows users to overlay custom text on top of all apps. Its primary purpose is to act as a **non-dismissable, always-visible reminder** ideal for displaying things like exam timetables, goals, or urgent tasks that need constant visibility.
 
 Unlike alarm clocks or notifications that can be snoozed or cleared, this overlay ensures your reminder is always in sight while you use your device.
 
@@ -47,7 +47,7 @@ Download the latest release APK [here](https://github.com/Shonola-Jedidiah/Overl
 
 ## 💡 Motivation
 
-This app was built to solve a personal problem: forgetting things even after setting alarms and notifications. With *Overlay*, your most critical reminder stays front and center at all times.
+This app was built to solve a personal problem: forgetting things even after setting alarms and notifications. With **Overlay**, your most critical reminder stays front and center at all times.
 
 ---
 
