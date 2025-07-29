@@ -19,7 +19,8 @@ Unlike alarm clocks or notifications that can be snoozed or cleared, this overla
 ## 📦 APK
 
 Download the latest release APK [here](https://github.com/Shonola-Jedidiah/Overlay_compose/blob/master/release/Overlay.apk) or 
-[Alternative Download]() 
+[Alternative Download]()
+</br>
 (Or build with Android Studio)
 
 ## 🚀 How It Works
