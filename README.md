@@ -4,6 +4,7 @@
 
 Unlike alarm clocks or notifications that can be snoozed or cleared, this overlay ensures your reminder is always in sight while you use your device.
 
+---
 
 ## ✨ Features
 
@@ -12,11 +13,13 @@ Unlike alarm clocks or notifications that can be snoozed or cleared, this overla
 - ⚙️ **Foreground Service** – Keeps the overlay active with low battery impact.
 - 🔒 **No Ads, No Data Collection** – 100% private and offline.
 - 🎨 **Jetpack Compose UI** – Built entirely with Jetpack Compose.
+  
+---
 
 ## 📦 APK
 
 Download the latest release APK [here](https://github.com/Shonola-Jedidiah/Overlay_compose/blob/master/release/Overlay.apk) or 
-[Alterntive Download]() 
+[Alternative Download]() 
 (Or build with Android Studio)
 
 ## 🚀 How It Works
@@ -25,6 +28,8 @@ Download the latest release APK [here](https://github.com/Shonola-Jedidiah/Overl
 2. Grant overlay permission.
 3. Enter your custom reminder text.
 4. Start the overlay – it remains visible over whatever app you’re using.
+
+---
 
 ## 📸 Screenshots
 
@@ -41,11 +46,11 @@ Download the latest release APK [here](https://github.com/Shonola-Jedidiah/Overl
 
 ## 💡 Motivation
 
-This app was built to solve a personal problem: forgetting things even after setting alarms and notifications. With *Overlay*, your most critical reminder stays front and center always.
+This app was built to solve a personal problem: forgetting things even after setting alarms and notifications. With *Overlay*, your most critical reminder stays front and center at all times.
 
 ---
 
 ## 🔗 Connect
 
-Made with ❤️ by [Shonola Jedidiah](https://www.linkedin.com/in/shonola-jedidiah)
+Made with ❤️ by [Shonola Jedidiah LinkedIn](https://www.linkedin.com/in/shonola-jedidiah)
 
