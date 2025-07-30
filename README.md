@@ -18,12 +18,11 @@ Unlike alarm clocks or notifications that can be snoozed or cleared, this overla
 
 ## APK
 
-Download the latest release APK [here](https://github.com/Shonola-Jedidiah/Overlay_compose/blob/master/release/Overlay.apk) or 
-[Alternative Download]()
+Download the latest release APK [here](https://github.com/Shonola-Jedidiah/Overlay_compose/releases/download/1.0.0/Overlay.apk)
 </br>
 Building with Android Studio
 - git clone https://github.com/Shonola-Jedidiah/Overlay_compose.git
-- Open project with Android Studio and Build
+- Open the project with Android Studio and Build
 
 ## How It Works
 
